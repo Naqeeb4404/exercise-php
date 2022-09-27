@@ -15,12 +15,14 @@
   //For Loop
   //Foreach Loop
   $x = 1;
-  while ($x <= 5) {
+  do {
     echo "hi there<br>";
     $x++;
   }
- 
-?>
+  while ($x <= 5);
+  
+ ?>
+
 
 </body>
 
