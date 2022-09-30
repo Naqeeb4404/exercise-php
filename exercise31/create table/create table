@@ -1,0 +1,13 @@
+create table posts (
+    id int(11) not null PRIMARY KEY AUTO_INCERMENT,
+    subject varchar(128) not null,
+    content varchar(1000) not null,
+    date datetime not null
+);
+
+insert into posts (subject, content, date) VALUES ('This is subject','Ut suscipit orci non massa rutrum semper.
+Curabitur finibus, diam nec egestas tempor, velit ligula mattis velit, vitae laoreet enim neque ac est. 
+Pellentesque venenatis, ligula nec cursus tempus, ex eros tristique eros, et rhoncus metus ex vel urna.
+Nullam suscipit eget turpis eu imperdiet. Ut accumsan urna non ligula molestie aliquet. Etiam leo est, 
+mattis vel mauris eget, mattis efficitur purus. Donec et iaculis elit. Nulla fac
+ilisi', '2015-11-14'       16:38:01');
