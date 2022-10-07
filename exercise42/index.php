@@ -23,11 +23,26 @@ elseif (strpos($fullurl, "signup=char") == true) {
     echo"<P class='error'>You did not fill in all fields!</p>;
 }
 elseif (strpos($fullurl, "signup=email") == true) {
-    echo"<P class='error'>You did not fill in all fields!</p>;
+    echo'<P class='error'>You did not fill in all fields!</p>;
 }
 elseif (strpos($fullurl, "signup=success") == true) {
     echo"<P class='error'>You did not fill in all fields!</p>;
-}
+}*/
+
+ if (!isset($_GET['signup'])) {
+    exit();
+ }
+ else {
+    $signupCheck = $_GET['signup'];
+
+    elseif ($signupCheck == "empty") {
+    echo"<P class='error'>You did not fill in all fields!</p>;
+    exit();
+    }
+ }
+ 
+
+
 ?>
 </body>
 </html>
