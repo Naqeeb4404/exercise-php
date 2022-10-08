@@ -5,18 +5,21 @@
 </head>
 <body>
 
-<?php
-/*echo "test123";
-echo "<br>";
-echo password_hash("test123", PASSWORD_DEFAULT);*/
+<header>
+    <nav>
+        <a href="#">
+            <img src="img/logo.png" alt="logo">
+</a>
+<ul>
+    <li><a href="#">home</a></li>
+    <li><a href="#">poftfolio</a></li>
+    <li><a href="#">about me</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<div>
+    
+</nav>
 
-$input = "test123";
-$hashedPwdInDb = password_hash("test123", PASSWORD_DEFAULT);
-
-echo password_verify($input, $hashedPwdInDb );
-
-?>
-
-
+</header>
 </body>
 </html>
